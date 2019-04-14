@@ -1,0 +1,30 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:browser="http://namespaces.zope.org/browser">
+
+  <browser:view
+      for="*"
+      name="base_template"
+      class=".testing.BaseTemplate"
+      permission="zope2.View"
+      />
+
+  <browser:view
+      for="*"
+      name="base_template_broken"
+      class=".testing.BaseTemplateBroken"
+      permission="zope2.View"
+      />
+
+    <browser:page 
+      for="*"
+      name="breakme-recursion"
+      template="breakme_recursion.pt"
+      permission="zope2.View" />
+
+    <browser:page 
+      for="*"
+      name="breakme-crash"
+      template="breakme_crash.pt"
+      permission="zope2.View" />
+
+</configure>

@@ -1,0 +1,3 @@
+<metal:page define-macro="master">
+  <metal:bodytext define-slot="main"></metal:bodytext>
+</metal:page>
