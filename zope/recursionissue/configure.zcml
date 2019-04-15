@@ -4,14 +4,14 @@
   <browser:view
       for="*"
       name="base_template"
-      class=".testing.BaseTemplate"
+      class=".base.BaseTemplate"
       permission="zope2.View"
       />
 
   <browser:view
       for="*"
       name="base_template_broken"
-      class=".testing.BaseTemplateBroken"
+      class=".base.BaseTemplateBroken"
       permission="zope2.View"
       />
 

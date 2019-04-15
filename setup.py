@@ -27,17 +27,19 @@ setup(
     url='',
     license='ZPL 2.1',
     packages=['zope', 'zope.recursionissue'],
-    package_dir={'': ''},
     namespace_packages=['zope'],
     include_package_data=True,
     platforms='Any',
     zip_safe=False,
-    install_requires=[
-        'Products.Five',
+    install_requires=[  
     ],
     extras_require={
         'test': []
     },
+    entry_points="""
+[z3c.autoinclude.plugin]
+target = plone
+""",
     classifiers=[
     ],
 )
