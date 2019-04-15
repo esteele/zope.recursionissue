@@ -6,7 +6,7 @@
 
 <metal:main fill-slot="main">
 
-    <span tal:content="context/breakme-recursion" />   
+    <span tal:content="context/breakme-main-template" />   
 
 </metal:main>
 
